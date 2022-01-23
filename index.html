@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
 
-<script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
 
-</script>
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
 
 <title>The FOSS App List</title>
+<body>
 
-<h1>What is this?</h1>
+<button type="button" class="collapsible">What is FOSS?</button>
+<div class="content">
+<p>Essentially, Free Open Source Software is software that belongs to the community. It's free in that it doesn't belong to an individual or a corporation. A person or team made it, but anyone can take what they've made and add to it, or make their own version. It belongs to the community.</p>
 
-Basically, a list of free no-strings-attached apps for your phone. No ads, no subscriptions. Made by people simply because they felt like it should exist.
+<p>This also means, unlike "free" products by corporations or capitalists, there's no profit motive. There's no ads, no subscriptions, and no tracking and selling your data.</p>
+</div>
 
 <h1>Why do I care?</h1>
 
@@ -32,5 +59,22 @@ Capitalism encourages software to be limited (unless paid for), and constantly b
 
 <img src="loop_habit_tracker.png" alt="Loop Habit Tracker Logo"><a href="https://play.google.com/store/apps/details?id=org.isoron.uhabits">Loop Habit Tracker</a>(4.8 Stars): "Loop helps you create and maintain good habits, allowing you to achieve your long-term goals. Detailed charts and statistics show you how your habits improved over time. The app is completely ad-free, open source and it respects your privacy." <a href="https://github.com/iSoron/uhabits">Source code</a>
 
+
 </body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </html>
