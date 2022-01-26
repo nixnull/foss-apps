@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.the-list {
+    background-color: #252525;
+    padding: 1%;
+    border-radius: 1%;
+}
+
+.the-list h1 {
+    color: #B3B3B3;
+}
+
+.entry {
+    display: flex;
+    align-items: center;
+    background-color: #B26D69;
+    border-radius: 1%;
+    color: #B4C7D0;
+}
+
+.entry a {
+    color:#0267C1;
+}
+
+img {
+    border-radius: 1%;
+    vertical-align: middle;
+    padding-right: 3%
+}

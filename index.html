@@ -1,80 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 
 <title>The FOSS App List</title>
 <body>
-
-<button type="button" class="collapsible">What is FOSS?</button>
-<div class="content">
+<h1>The FOSS App List</h1>
+<h2>What is FOSS?</h2>
 <p>Essentially, Free Open Source Software is software that belongs to the community. It's free in that it doesn't belong to an individual or a corporation. A person or team made it, but anyone can take what they've made and add to it, or make their own version. It belongs to the community.</p>
 
 <p>This also means, unlike "free" products by corporations or capitalists, there's no profit motive. There's no ads, no subscriptions, and no tracking and selling your data.</p>
-</div>
 
-<h1>Why do I care?</h1>
+<h2>Why do I care?</h2>
 
 Most obviously, it's a better experience. Nobody is selling you anything, nobody is locking features behind paywalls.
 
 But also, FOSS is anticapitalist, it's decentralized, and it's community based. FOSS is made by individuals or small groups that just wanted to make something they cared about, that felt useful to people. If they stop or lose interest, someone else can pick up the project. Our entire software ecosystem could be this way.
 
-<h1>Won't this be inferior to paid apps?</h1>
+<h2>Won't this be inferior to paid apps?</h2>
 
 No. Every app on this list has 4 or more stars. Try them yourself.
 
 Capitalism encourages software to be limited (unless paid for), and constantly be replaced with "better" versions. FOSS survives purely on functionality. If it's useful, it floats to the top. If something does it better, it's replaced or integrated. There's no motive to limit the quality or functionality.
 
-<h1>The List</h1>
+<br><br>
 
-<img src="geometric_weather.png" alt="Geometric Weather Logo"><a href="https://play.google.com/store/apps/details?id=wangdaye.com.geometricweather">Geometric Weather </a>(4.5 Stars): "Geometric Weather is a light and powerful weather app that provides you with real-time temperature, air quality, 15-days weather forecast, and accurate time-sharing trends." <a href="https://github.com/WangDaYeeeeee/GeometricWeather">Source code</a>
+<div class="the-list">
+    <h1>The List</h1>
+    
+    <div class="entry">
+        <img src="geometric_weather.png" alt="Geometric Weather Logo">
+    
+        <p><a href="https://play.google.com/store/apps/details?id=wangdaye.com.geometricweather">Geometric Weather</a> (4.5 Stars): "Geometric Weather is a light and powerful weather app that provides you with real-time temperature, air quality, 15-days weather forecast, and accurate time-sharing trends." <a href="https://github.com/WangDaYeeeeee/GeometricWeather">Source code</a></p>
+    </div>
+    
+    </br>
 
-</br></br>
-
-<img src="loop_habit_tracker.png" alt="Loop Habit Tracker Logo"><a href="https://play.google.com/store/apps/details?id=org.isoron.uhabits">Loop Habit Tracker</a>(4.8 Stars): "Loop helps you create and maintain good habits, allowing you to achieve your long-term goals. Detailed charts and statistics show you how your habits improved over time. The app is completely ad-free, open source and it respects your privacy." <a href="https://github.com/iSoron/uhabits">Source code</a>
-
+    <div class="entry">
+        <img src="loop_habit_tracker.png" alt="Loop Habit Tracker Logo"> 
+    
+        <p><a href="https://play.google.com/store/apps/details?id=org.isoron.uhabits">Loop Habit Tracker</a> (4.8 Stars): "Loop helps you create and maintain good habits, allowing you to achieve your long-term goals. Detailed charts and statistics show you how your habits improved over time. The app is completely ad-free, open source and it respects your privacy." <a href="https://github.com/iSoron/uhabits">Source code</a></p>
+    </div>
+</div>
 
 </body>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-</script>
 </html>
