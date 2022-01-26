@@ -5,24 +5,20 @@ h1 {
 body {
     padding-left: 5%;
     padding-right: 5%;
+    font-family: calibri;
 }
 
 .the-list {
-    background-color: #252525;
     padding: 1%;
     border-radius: 1%;
-}
-
-.the-list h1 {
-    color: #B3B3B3;
 }
 
 .entry {
     display: flex;
     align-items: center;
-    background-color: #B26D69;
+    background-color: #E29D99;
     border-radius: 1%;
-    color: #B4C7D0;
+    color: #303030;
 }
 
 .entry a {
@@ -30,7 +26,9 @@ body {
 }
 
 img {
-    border-radius: 1%;
+    border-radius: 3%;
     vertical-align: middle;
-    padding-right: 3%
+    padding-right: 3%;
+    width: 180px;
+    height: 180px;
 }
